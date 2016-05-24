@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.9.2
+3 info using node@v4.4.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/will.riley/postcss-solemn',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/will.riley/.npm/postcss-solemn/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/will.riley/.npm correctMkdir not in flight; initializing
+10 info lifecycle postcss-solemn@1.0.2~prepublish: postcss-solemn@1.0.2
+11 silly lifecycle postcss-solemn@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/will.riley/.npm/postcss-solemn/1.0.2/package.tgz',
+12 verbose tar pack   '/Users/will.riley/postcss-solemn' ]
+13 verbose tarball /Users/will.riley/.npm/postcss-solemn/1.0.2/package.tgz
+14 verbose folder /Users/will.riley/postcss-solemn
+15 verbose addLocalTarball adding from inside cache /Users/will.riley/.npm/postcss-solemn/1.0.2/package.tgz
+16 verbose correctMkdir /Users/will.riley/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd postcss-solemn@1.0.2
+18 verbose afterAdd /Users/will.riley/.npm/postcss-solemn/1.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/will.riley/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/will.riley/.npm/postcss-solemn/1.0.2/package/package.json written
+21 silly publish { name: 'postcss-solemn',
+21 silly publish   version: '1.0.2',
+21 silly publish   description: 'A PostCSS plugin that detects inappropriate language in your CSS.',
+21 silly publish   main: 'lib/postcss-solemn.js',
+21 silly publish   scripts: { test: 'nodeunit test/test.js' },
+21 silly publish   keywords:
+21 silly publish    [ 'postcss-plugin',
+21 silly publish      'postcss',
+21 silly publish      'coding',
+21 silly publish      'censorship',
+21 silly publish      'profanity',
+21 silly publish      'static analysis',
+21 silly publish      'css' ],
+21 silly publish   author: { name: 'Will Riley' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies: { lodash: '^4.12.0', postcss: '^5.0.21', profane: '^1.2.1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/willynilly/postcss-solemn.git' },
+21 silly publish   engines: { node: '*' },
+21 silly publish   devDependencies: { gulp: '^3.9.1', 'gulp-postcss': '^6.1.1', nodeunit: '^0.9.1' },
+21 silly publish   readme: '# postcss-solemn\nA PostCSS plugin that detects inappropriate language in your CSS code.\n\n# Usage\n```js\n\nvar processors = [\n    solemn({\n        reportViolations: false,\n        callback: function(violations, violationMessages) {\n            console.log(violations);\n            console.log(violationMessages);\n        },\n        dictionaries: [\'dictionary1.json\', \'dictionary2.json\']\n    })\n];\n\ngulp.src(\'styles/*.css\')\n    .pipe(postcss(processors));\n\n```\n\n# Options\n\n## reportViolations\nIf true, it prints violation messages to the screen.\n\n## callback (optional)\nA callback to receive two arrays - an array of violations and an array of corresponding violationMessages.\nThe callback must be in the following form:\n```js\n\nfunction(violations, violationMessages) {\n  // do something\n}\n\n```\n\n## dictionaries\nAn array of dictionary files to use for detecting inappropriate language.\n\nEach custom dictionary is a JSON file with the following format:\n\n```js\n{\n  "word1": ["category1", "category3"],\n  "word2": ["category2"],\n  "word3": ["category1"]\n  "word4": ["category2", "category3", "category4"]\n}\n```\n\nEvery word must have at least one violation category.  If multiple dictionaries are specified, words and their categories are merged.\n\n# Test\nTo test the module, run the follow from the command line:\n```js\n\nnpm test\n\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '401015f9f05228893a91fce2a4c1325e0d7b8598',
+21 silly publish   bugs: { url: 'https://github.com/willynilly/postcss-solemn/issues' },
+21 silly publish   homepage: 'https://github.com/willynilly/postcss-solemn#readme',
+21 silly publish   _id: 'postcss-solemn@1.0.2',
+21 silly publish   _shasum: 'dffbbf0a2c3a08d8214a7bc4e3295949792c3b71',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name postcss-solemn
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'postcss-solemn',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'postcss-solemn',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/postcss-solemn
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/will.riley/.npm/postcss-solemn/1.0.2/package.tgz
+30 verbose request uri https://registry.npmjs.org/postcss-solemn
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:27:35 AM
+33 verbose request using bearer token for auth
+34 verbose request id bdcc56e6cf5714d2
+35 http request PUT https://registry.npmjs.org/postcss-solemn
+36 http 403 https://registry.npmjs.org/postcss-solemn
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 24 May 2016 06:27:36 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-jfk1048-JFK',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1464071255.888125,VS0,VE558',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/will.riley/.npm/registry.npmjs.org/postcss-solemn on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : postcss-solemn
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid postcss-solemn
+43 verbose cwd /Users/will.riley/postcss-solemn
+44 error Darwin 15.2.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v4.4.4
+47 error npm  v3.9.2
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.2." : postcss-solemn
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
