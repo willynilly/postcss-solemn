@@ -52,7 +52,7 @@ Each custom dictionary is a JSON file with the following format:
 
 Every word must have at least one violation category.  If multiple dictionaries are specified, words and their categories are merged.
 
-## Test
+# Test
 To test the module, run the follow from the command line:
 ```js
 
