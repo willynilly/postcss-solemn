@@ -1,4 +1,4 @@
-# Overview
+# postcss-solemn
 A PostCSS plugin that detects inappropriate language in your CSS code.
 
 # Usage
