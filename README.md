@@ -1,15 +1,8 @@
-# postcss-solemn
+# Overview
 A PostCSS plugin that detects inappropriate language in your CSS code.
 
 # Usage
 ```js
-
-var callback = function(violations, formattedViolations) {
-    test.ok(violations.length > 0);
-    test.equals(formattedViolations.length, violations.length);
-    test.equals(that.logMessages.length, 0);
-    test.done();
-};
 
 var processors = [
     solemn({
@@ -18,11 +11,11 @@ var processors = [
             console.log(violations);
             console.log(violationMessages);
         },
-        dictionaries: ['test/fixtures/dictionary1.json', 'test/fixtures/dictionary2.json']
+        dictionaries: ['dictionary1.json', 'dictionary2.json']
     })
 ];
 
-gulp.src('test/fixtures/*.css')
+gulp.src('styles/*.css')
     .pipe(postcss(processors));
 
 ```

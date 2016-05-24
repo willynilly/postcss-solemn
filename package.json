@@ -1,7 +1,7 @@
 {
     "name": "postcss-solemn",
-    "version": "1.0.0",
-    "description": "Detects inappropriate language in your CSS.",
+    "version": "1.0.1",
+    "description": "A PostCSS plugin that detects inappropriate language in your CSS.",
     "main": "lib/postcss-solemn.js",
     "scripts": {
         "test": "nodeunit test/test.js"
