@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var solemn = require('postcss-solemn');
+var solemn = require('../lib/postcss-solemn');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
